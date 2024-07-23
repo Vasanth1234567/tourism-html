@@ -1,0 +1,184 @@
+/* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%;
+}
+
+/* Overlay to darken background image */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    opacity: 0.8; /* Slight transparency */
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(85, 85, 85, 0.8); /* Semi-transparent background */
+    margin: 0 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(119, 119, 119, 0.8); /* Semi-transparent background on hover */
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.container img {
+    width: 100%;
+    opacity: 0.9; /* Slight transparency for images */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.9; /* Slight transparency */
+}
+
+.shadow-text {
+    font-size: 3em;
+    color:lightcoral;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.outline-text {
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.outline-text::before {
+    content: "Go ADVENTURE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ff6b6b;
+    z-index: -1;
+    filter: blur(4px);
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between cards as needed */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 300px; /* Maximum width of the card */
+    border: 1px solid #ddd; /* Border for the card */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.card h3 {
+    margin: 15px; /* Spacing around the heading */
+    font-size: 1.2em; /* Font size for heading */
+    text-align: center; /* Center the heading text */
+}
+
+.card a {
+    display: block; /* Block display for the link */
+    text-decoration: none; /* Remove underline from link */
+    color: #333; /* Text color */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
